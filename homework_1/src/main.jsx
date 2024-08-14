@@ -1,10 +1,21 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import { createRoot } from "react-dom/client";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+const Heading = ({ text, color }) => {
+  return <h1 style={{ color }}> {text}</h1>;
+};
+const Description = ({ textStyle }) => {
+  const userName = prompt("Input your name");
+  return (
+    <h2 style={{ fontStyle: textStyle }}>
+      {" "}
+      {userName}`s first React application
+    </h2>
+  );
+};
+
+createRoot(document.getElementById("root")).render(
+  <>
+    <Heading text="Hello, world!" color="crimson" />
+    <Description textStyle="italic" />
+  </>
+);
