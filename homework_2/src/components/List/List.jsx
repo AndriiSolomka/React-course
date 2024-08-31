@@ -6,6 +6,8 @@ import "../../styles/table.css";
 const List = () => {
   const [list, setList] = useState(array);
   const elementCount = makeNumArr(array);
+  console.log(elementCount);
+  
 
   useEffect(() => {
     const intervalId = setInterval(() => {
