@@ -1,6 +1,6 @@
 .table {
   border-collapse: collapse;
-  width: 100%; /* Ширина таблицы увеличена до 100% */
+  width: 100%; 
 }
 
 th,
@@ -12,9 +12,9 @@ td {
 
 .table thead td {
   white-space: nowrap;
-  min-width: 200px; /* Минимальная ширина заголовка, можно настроить */
+  min-width: 200px; 
 }
 
 .table thead tr td {
-  width: 33.33%; /* Задаем равномерное распределение ширины для всех заголовков */
+  width: 33.33%; 
 }

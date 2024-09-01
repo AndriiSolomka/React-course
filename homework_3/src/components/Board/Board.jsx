@@ -15,8 +15,8 @@ function Board() {
   useEffect(() => {
     (async () => {
       try {
-        const request = await fetch(URL);
-        const response = await request.json();
+        const request = await fetch(URL),
+          response = await request.json();
         setBoard(response);
       } catch (error) {
         console.error(error);
