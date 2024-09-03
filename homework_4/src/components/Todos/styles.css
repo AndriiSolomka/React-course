@@ -1,0 +1,63 @@
+.item-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.item--buy {
+  color: #f046bd;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.button--delete {
+  background-color: #e74c3c;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 15px;
+  font-size: 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.button--delete:hover {
+  background-color: #c0392b;
+}
+
+.todos--form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+    border: 1px solid black;
+}
+
+.todos--form label {
+    margin-bottom: 10px;
+}
+
+.price--form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: fit-content;
+  border: 1px solid black;
+}
+
+.price--form label {
+  margin-bottom: 10px;
+}
+
+.item-price {
+  font-weight: bold;
+  color: rgb(96, 6, 148);
+  margin-left: 10px;
+  font-size: 20px;
+}
