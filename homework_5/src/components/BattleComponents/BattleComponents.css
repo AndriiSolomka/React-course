@@ -1,0 +1,42 @@
+.battle-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 150px;
+}
+
+.first-player,
+.second-player {
+  flex: 1;
+  max-width: 100%;
+}
+
+.restart-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.restart-btn:hover {
+  background-color: #0056b3;
+}
+
+.battle-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.battle-btn:hover {
+  background-color: #218838;
+}
