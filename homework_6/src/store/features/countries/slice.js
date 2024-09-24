@@ -29,18 +29,7 @@ const initialState = {
 export const countriesSlice = createSlice({
   name: "countries",
   initialState,
-  reducers: {
-    /*  setDelete: async (state, action) => {
-      console.log(action.payload);
-
-      state.countries = await services.delete(action.payload);
-
-      /* await services.delete(action); */
-    /* state.countries.filter(
-        (country) => country.id !== action.payload
-      );
-    }, */
-  },
+  reducers: {},
 
   extraReducers: (builder) => {
     builder
