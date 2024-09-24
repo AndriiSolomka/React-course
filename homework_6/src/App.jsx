@@ -7,7 +7,8 @@ import ErrorRoute from "./routes/ErrorRoute";
 import HomeRoute from "./routes/HomeRoute";
 import Layout from "./pages/Layout";
 import CountriesRoute from "./routes/CountriesRoute";
-import CountriesFullInfo from "./components/CountriesFullInfo/CountriesFullInfo";
+import CountriesFullInfoRoute from "./routes/CountriesFullInfoRoute";
+import { HOME, COUNTRIES, COUNTRY_FULL_INFO } from "./const/path";
 
 const router = createBrowserRouter([
   {
@@ -16,16 +17,16 @@ const router = createBrowserRouter([
     errorElement: <ErrorRoute />,
     children: [
       {
-        path: "/home",
+        path: HOME,
         element: <HomeRoute />,
       },
       {
-        path: "/countries",
+        path: COUNTRIES,
         element: <CountriesRoute />,
       },
       {
-        path: "/countries/:countryName",
-        element: <CountriesFullInfo />,
+        path: COUNTRY_FULL_INFO,
+        element: <CountriesFullInfoRoute />,
       },
     ],
   },

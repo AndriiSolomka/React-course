@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { HOME, COUNTRIES } from "../../const/path";
 import "./Navigation.sass";
 
 const Navigation = () => {
@@ -8,10 +9,10 @@ const Navigation = () => {
       <nav>
         <ul>
           <li className="nav__link">
-            <NavLink to="/home">Home </NavLink>
+            <NavLink to={HOME}>Home </NavLink>
           </li>
           <li className="nav__link">
-            <NavLink to="/countries">Countries </NavLink>
+            <NavLink to={COUNTRIES}>Countries </NavLink>
           </li>
         </ul>
       </nav>
