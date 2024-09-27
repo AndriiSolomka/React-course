@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { stopBubbling } from "../../utils/utils";
 import { COUNTRIES } from "../../const/path";
-import { fetchDeleteCountry } from "../../store/features/countries/slice";
+import { fetchDeleteCountry } from "../../store/features/countries/thunks";
 
 const DeleteBtn = ({ id }) => {
   const dispatch = useDispatch();

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { fetchCountries } from "./store/features/countries/slice";
+import { fetchCountries } from "./store/features/countries/thunks";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorRoute from "./routes/ErrorRoute";

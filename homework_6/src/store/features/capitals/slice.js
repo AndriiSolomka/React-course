@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { CAPITAL_DEFAULT_VALUE } from "../../../const/const";
+import { SLICE_CAPITALS_NAME } from "./const";
 
 const initialState = {
   selectedCapital: CAPITAL_DEFAULT_VALUE.capital,
@@ -7,7 +8,7 @@ const initialState = {
 };
 
 const capitalsSlice = createSlice({
-  name: "capitals",
+  name: SLICE_CAPITALS_NAME,
   initialState,
   reducers: {
     setCapital: (state, action) => {

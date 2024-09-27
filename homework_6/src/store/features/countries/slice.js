@@ -1,33 +1,15 @@
 "use strict";
 
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { services } from "../../../services/services";
-
-export const fetchCountries = createAsyncThunk(
-  "countries/fetchCountries",
-  async () => {
-    const response = await services.get();
-
-    console.log("SLICE: ", response);
-
-    return response;
-  }
-);
-
-export const fetchDeleteCountry = createAsyncThunk(
-  "countries/deleteCountry",
-  async (countryId) => {
-    await services.delete(countryId);
-    return countryId;
-  }
-);
+import { createSlice } from "@reduxjs/toolkit";
+import { fetchCountries, fetchDeleteCountry } from "./thunks";
+import { SLICE_COUNTRY_NAME } from "./const";
 
 const initialState = {
   countries: [],
 };
 
 export const countriesSlice = createSlice({
-  name: "countries",
+  name: SLICE_COUNTRY_NAME,
   initialState,
   reducers: {},
 
